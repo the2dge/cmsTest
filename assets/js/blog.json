@@ -1,0 +1,38 @@
+[
+  {
+    "category": "AI",
+    "subcategory":"Trend",
+    "title": "Deepseek 將改變一切",
+    "image": "assets/images/blog3.jpg",
+    "summary": "Deepseek R1 是首個真正有意義的開源 LLM...",
+    "content": "**Deepseek R1** 是當前最具突破性的開源 **大語言模型（LLM）** 之一...",
+    "id": "blog1"
+  },
+  {
+    "category": "AI",
+    "subcategory":"Trend",
+    "title": "ChatGPT 在日常生活",
+    "image": "assets/images/blog4.jpg",
+    "summary": "如果能夠善用 ChatGPT，它將極大提升學習與工作效率...",
+    "content": "**ChatGPT** 不僅僅是一個聊天機器人，它是一種強大的 AI 助手...",
+    "id": "blog2"
+  },
+  {
+    "category": "Business/Trend",
+    "subcategory":"Trend",
+    "title": "The Corporation in the Twenty-First Century",
+    "image": "assets/images/blog1.jpg",
+    "summary": "本書顛覆我們對企業的傳統認知，揭示現代商業的真相...",
+    "content": "**《The Corporation in the Twenty-First Century》** 挑戰了人們對於現代企業的傳統觀念...",
+    "id": "blog3"
+  },
+  {
+    "category": "Book",
+    "subcategory":"History",
+    "title": "人類大歷史 (Sapiens: A Brief History of Humankind)",
+    "image": "assets/images/blog2.jpg",
+    "summary": "這本書講述了人類從遠古時代至今的發展歷程...",
+    "content": "**《人類大歷史》** 是由 Yuval Noah Harari 所著，探討人類如何從一種普通的動物演變成地球的主宰...",
+    "id": "blog4"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "category": "AI",
+    "subcategory":"Trend",
+    "title": "Deepseek 將改變一切",
+    "image": "assets/images/blog3.jpg",
+    "summary": "Deepseek R1 是首個真正有意義的開源 LLM...",
+    "contentFile": "content/blog1.html",
+    "id": "blog1"
+  },
+  {
+    "category": "AI",
+    "subcategory":"Trend",
+    "title": "ChatGPT 在日常生活",
+    "image": "assets/images/blog4.jpg",
+    "summary": "如果能夠善用 ChatGPT，它將極大提升學習與工作效率...",
+    "contentFile": "content/blog2.html",
+    "id": "blog2"
+  },
+  {
+    "category": "Business/Trend",
+    "subcategory":"Trend",
+    "title": "The Corporation in the Twenty-First Century",
+    "image": "assets/images/blog1.jpg",
+    "summary": "本書顛覆我們對企業的傳統認知，揭示現代商業的真相...",
+    "contentFile": "content/blog3.html",
+    "id": "blog3"
+  },
+  {
+    "category": "Book",
+    "subcategory":"History",
+    "title": "人類大歷史 (Sapiens: A Brief History of Humankind)",
+    "image": "assets/images/blog2.jpg",
+    "summary": "這本書講述了人類從遠古時代至今的發展歷程...",
+    "contentFile": "content/blog4.html",
+    "id": "blog4"
+  }
+]
