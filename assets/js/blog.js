@@ -1,7 +1,52 @@
 document.addEventListener("DOMContentLoaded", function () {
     generateBlog();
 });
+function generateBlog() {
+    // Published Google Sheet as CSV
+    const SHEET_ID = '1hmRibcBrnn8LUo5wXZ9Y4m4oT3e76pn9bRFnSSZ_UXE';
+    const SHEET_NAME = 'blog'; // Your sheet tab name
+    const PUBLISHED_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${SHEET_NAME}`;
 
+    fetch(PUBLISHED_URL)
+        .then(response => response.text())
+        .then(csvText => {
+            // Parse CSV into JSON
+            const data = parseCSV(csvText);
+            
+            // Continue with your existing rendering code...
+            const blogContainer = document.getElementById("blog-container");
+            blogContainer.innerHTML = "";
+            
+            data.forEach((blog) => {
+                // Your existing rendering code...
+            });
+            
+            attachEventListeners();
+        })
+        .catch(error => console.error("Error loading blog data:", error));
+}
+
+// Simple CSV parser function
+function parseCSV(text) {
+    const lines = text.split('\n');
+    const headers = lines[0].split(',').map(header => 
+        header.replace(/"/g, '').trim().toLowerCase()
+    );
+    
+    return lines.slice(1).map(line => {
+        const values = line.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g) || [];
+        const row = {};
+        
+        headers.forEach((header, i) => {
+            const value = values[i] ? values[i].replace(/"/g, '') : '';
+            row[header] = value;
+        });
+        
+        return row;
+    });
+}
+
+/*
 function generateBlog() {
   //  fetch("assets/blog/blog.json")
     fetch("https://script.google.com/macros/s/AKfycbwMvKTXGI13clEGeAw5nA-x0QocCe2OzJvdcVJwHoFTg6Yp92dV9O2jhRCZBMX7nJeI/exec")
@@ -47,7 +92,7 @@ function generateBlog() {
         })
         .catch(error => console.error("Error loading blog data:", error));
 }
-
+*/
 function attachEventListeners() {
     const readMoreButtons = document.querySelectorAll(".read_more");
 
